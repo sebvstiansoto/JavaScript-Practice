@@ -1,14 +1,28 @@
-function saludar(sexo) {
-    let h = 'hombre';
-    let m = 'mujer';
+const m = 'masculino';
+const f = 'femenino';
 
-    if (sexo === 'h'){
-        return 'Hola, ${h}';
-    } else if (genero === 'm'){
+
+function saludar(sexo) {
+
+    if (sexo === 'm'){
         return 'Hola, ${m}';
+    } else if (genero === 'f'){
+        return 'Hola, ${f}';
     } else {
         return 'Hola, desconocido'
     }
 }
 
 console.log(saludar(h))
+
+function adios(sexo) {
+
+    if ( sexo === 'm') {
+        return 'Hola, ${m}';
+    } else if ( sexo === 'f') {
+        return 'Hola, ${f}';
+    } else {
+        return 'Hola, desconocido'
+    }
+    
+}
